@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer 3 - Network Layer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌐 Internet Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="layers.html">All Layers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="layer-hero l3">
+            <h1>Layer 3: Network Layer</h1>
+            <p class="subtitle">The routing and addressing layer</p>
+        </div>
+
+        <div class="content-section">
+            <h2>What is the Network Layer?</h2>
+            <p>The Network Layer is responsible for <strong>logical addressing</strong> (IP addresses) and <strong>routing</strong> data packets from source to destination across multiple networks.</p>
+            <p>This is where <strong>routers</strong> operate - they read IP addresses and determine the best path for data to travel.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Key Functions</h2>
+            <ul>
+                <li><strong>Logical Addressing:</strong> Assigns IP addresses to identify devices</li>
+                <li><strong>Routing:</strong> Determines the best path for packets</li>
+                <li><strong>Packet Forwarding:</strong> Moves packets hop-by-hop to destination</li>
+                <li><strong>Fragmentation:</strong> Breaks packets if they're too large</li>
+                <li><strong>Error Handling:</strong> Reports delivery problems (ICMP)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>IP Addressing</h2>
+            <ul>
+                <li><strong>IPv4:</strong> 32-bit address (e.g., <code>192.168.1.1</code>)
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>~4.3 billion unique addresses</li>
+                        <li>Format: xxx.xxx.xxx.xxx (0-255 each)</li>
+                    </ul>
+                </li>
+                <li style="margin-top: 1rem;"><strong>IPv6:</strong> 128-bit address (e.g., <code>2001:0db8:85a3::8a2e:0370:7334</code>)
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>340 undecillion unique addresses</li>
+                        <li>Designed to replace IPv4</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Common Protocols & Devices</h2>
+            <ul>
+                <li><strong>IP</strong> - Internet Protocol</li>
+                <li><strong>ICMP</strong> - Internet Control Message Protocol (ping)</li>
+                <li><strong>ARP</strong> - Address Resolution Protocol</li>
+                <li><strong>OSPF, BGP, RIP</strong> - Routing protocols</li>
+                <li><strong>Routers</strong> - Layer 3 devices</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Real-World Example</h2>
+            <p>When you visit a website:</p>
+            <div class="example-box">
+                <p>1. Your device has IP: <code>192.168.1.100</code></p>
+                <p>2. Website server has IP: <code>142.250.190.78</code> (Google)</p>
+                <p>3. Your router checks routing table</p>
+                <p>4. Packet travels through multiple routers</p>
+                <p>5. Each router forwards based on IP destination</p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="layer4.html" class="nav-btn">← Layer 4: Transport</a>
+            <a href="layer2.html" class="nav-btn">Layer 2: Data Link →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Web Technology Project - OSI Model Explained</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

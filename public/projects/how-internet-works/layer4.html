@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer 4 - Transport Layer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌐 Internet Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="layers.html">All Layers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="layer-hero l4">
+            <h1>Layer 4: Transport Layer</h1>
+            <p class="subtitle">Reliable end-to-end delivery</p>
+        </div>
+
+        <div class="content-section">
+            <h2>What is the Transport Layer?</h2>
+            <p>The Transport Layer is responsible for <strong>end-to-end communication</strong> and <strong>data integrity</strong>. It ensures complete data transfer between two hosts, handling segmentation, flow control, and error correction.</p>
+            <p>This layer introduces the concept of <strong>ports</strong> - which allow multiple applications to use the network simultaneously.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Key Functions</h2>
+            <ul>
+                <li><strong>Segmentation:</strong> Breaks data into smaller segments</li>
+                <li><strong>Flow Control:</strong> Manages data transmission rate</li>
+                <li><strong>Error Control:</strong> Detects and retransmits lost segments</li>
+                <li><strong>Port Addressing:</strong> Uses ports to identify applications</li>
+                <li><strong>Connection Management:</strong> Establishes and terminates connections</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>TCP vs UDP</h2>
+            <ul>
+                <li><strong>TCP (Transmission Control Protocol):</strong>
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Connection-oriented (3-way handshake)</li>
+                        <li>Reliable - guarantees delivery</li>
+                        <li>Ordered - data arrives in sequence</li>
+                        <li>Slower due to overhead</li>
+                        <li>Used for: Web, Email, File Transfer</li>
+                    </ul>
+                </li>
+                <li style="margin-top: 1rem;"><strong>UDP (User Datagram Protocol):</strong>
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Connectionless</li>
+                        <li>Unreliable - no delivery guarantee</li>
+                        <li>Faster - minimal overhead</li>
+                        <li>Used for: Streaming, Gaming, DNS, VoIP</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Common Port Numbers</h2>
+            <ul>
+                <li><strong>Port 80</strong> - HTTP (Web)</li>
+                <li><strong>Port 443</strong> - HTTPS (Secure Web)</li>
+                <li><strong>Port 21</strong> - FTP</li>
+                <li><strong>Port 22</strong> - SSH</li>
+                <li><strong>Port 25</strong> - SMTP (Email)</li>
+                <li><strong>Port 53</strong> - DNS</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Real-World Example</h2>
+            <p>TCP Three-Way Handshake:</p>
+            <div class="example-box">
+                <p>1. <strong>SYN</strong> - Client: "Hey, can we talk?"</p>
+                <p>2. <strong>SYN-ACK</strong> - Server: "Sure, I'm ready!"</p>
+                <p>3. <strong>ACK</strong> - Client: "Great, let's begin!"</p>
+                <p>→ Connection established, data transfer begins</p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="layer5.html" class="nav-btn">← Layer 5: Session</a>
+            <a href="layer3.html" class="nav-btn">Layer 3: Network →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Web Technology Project - OSI Model Explained</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

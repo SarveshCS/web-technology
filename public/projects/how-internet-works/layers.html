@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Layers - OSI Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌐 Internet Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="layers.html" class="active">All Layers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>OSI Model - All 7 Layers</h1>
+            <p>Complete overview of each layer and its responsibilities</p>
+        </section>
+
+        <section>
+            <h2>Layer Comparison Table</h2>
+            <div style="overflow-x: auto;">
+                <table class="layers-table">
+                    <thead>
+                        <tr>
+                            <th>Layer</th>
+                            <th>Name</th>
+                            <th>Function</th>
+                            <th>Protocols/Examples</th>
+                            <th>Data Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="layer7.html">L7</a></td>
+                            <td><a href="layer7.html">Application</a></td>
+                            <td>User interface & application services</td>
+                            <td>HTTP, FTP, SMTP, DNS</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td><a href="layer6.html">L6</a></td>
+                            <td><a href="layer6.html">Presentation</a></td>
+                            <td>Data formatting, encryption, compression</td>
+                            <td>SSL/TLS, JPEG, ASCII</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td><a href="layer5.html">L5</a></td>
+                            <td><a href="layer5.html">Session</a></td>
+                            <td>Session management & synchronization</td>
+                            <td>NetBIOS, RPC, PPTP</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td><a href="layer4.html">L4</a></td>
+                            <td><a href="layer4.html">Transport</a></td>
+                            <td>End-to-end delivery & error recovery</td>
+                            <td>TCP, UDP</td>
+                            <td>Segment</td>
+                        </tr>
+                        <tr>
+                            <td><a href="layer3.html">L3</a></td>
+                            <td><a href="layer3.html">Network</a></td>
+                            <td>Logical addressing & routing</td>
+                            <td>IP, ICMP, Routers</td>
+                            <td>Packet</td>
+                        </tr>
+                        <tr>
+                            <td><a href="layer2.html">L2</a></td>
+                            <td><a href="layer2.html">Data Link</a></td>
+                            <td>Physical addressing & frame delivery</td>
+                            <td>Ethernet, MAC, Switches</td>
+                            <td>Frame</td>
+                        </tr>
+                        <tr>
+                            <td><a href="layer1.html">L1</a></td>
+                            <td><a href="layer1.html">Physical</a></td>
+                            <td>Physical transmission of raw bits</td>
+                            <td>Cables, Hubs, Signals</td>
+                            <td>Bits</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>How Data Flows</h2>
+            <div class="content-section">
+                <h2>Sending Data (Encapsulation)</h2>
+                <p>When you send data, it goes <strong>DOWN</strong> the layers:</p>
+                <ul>
+                    <li><strong>Layer 7:</strong> Application creates the data (e.g., web page request)</li>
+                    <li><strong>Layer 6:</strong> Data is formatted/encrypted</li>
+                    <li><strong>Layer 5:</strong> Session is established</li>
+                    <li><strong>Layer 4:</strong> Data is segmented, port numbers added</li>
+                    <li><strong>Layer 3:</strong> IP addresses added (packet created)</li>
+                    <li><strong>Layer 2:</strong> MAC addresses added (frame created)</li>
+                    <li><strong>Layer 1:</strong> Converted to electrical/light signals</li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h2>Receiving Data (De-encapsulation)</h2>
+                <p>When receiving data, it goes <strong>UP</strong> the layers:</p>
+                <ul>
+                    <li><strong>Layer 1:</strong> Signals received and converted to bits</li>
+                    <li><strong>Layer 2:</strong> Frame checked, MAC verified</li>
+                    <li><strong>Layer 3:</strong> Packet routed by IP address</li>
+                    <li><strong>Layer 4:</strong> Segments reassembled</li>
+                    <li><strong>Layer 5:</strong> Session maintained</li>
+                    <li><strong>Layer 6:</strong> Data decrypted/decompressed</li>
+                    <li><strong>Layer 7:</strong> Data delivered to application</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-btn">← Back to Home</a>
+            <a href="layer7.html" class="nav-btn">Start with Layer 7 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Web Technology Project - OSI Model Explained</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

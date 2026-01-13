@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer 1 - Physical Layer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌐 Internet Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="layers.html">All Layers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="layer-hero l1">
+            <h1>Layer 1: Physical Layer</h1>
+            <p class="subtitle">The hardware foundation</p>
+        </div>
+
+        <div class="content-section">
+            <h2>What is the Physical Layer?</h2>
+            <p>The Physical Layer is the <strong>lowest layer</strong> of the OSI model. It deals with the actual <strong>physical connection</strong> between devices - the cables, signals, and hardware that transmit raw bits (0s and 1s).</p>
+            <p>This layer is all about <strong>electricity, light, and radio waves</strong> - the actual means of moving data.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Key Functions</h2>
+            <ul>
+                <li><strong>Bit Transmission:</strong> Converts data to electrical/optical/radio signals</li>
+                <li><strong>Physical Topology:</strong> Defines network layout (bus, star, ring, mesh)</li>
+                <li><strong>Data Rate:</strong> Determines transmission speed (bits per second)</li>
+                <li><strong>Synchronization:</strong> Coordinates timing between sender and receiver</li>
+                <li><strong>Physical Interface:</strong> Defines connectors, pins, voltages</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Transmission Media</h2>
+            <ul>
+                <li><strong>Twisted Pair Cable (Ethernet):</strong>
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Cat5e, Cat6, Cat6a, Cat7</li>
+                        <li>RJ-45 connectors</li>
+                        <li>Up to 10 Gbps</li>
+                    </ul>
+                </li>
+                <li style="margin-top: 1rem;"><strong>Fiber Optic:</strong>
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Uses light pulses</li>
+                        <li>Single-mode and Multi-mode</li>
+                        <li>Up to 100+ Gbps</li>
+                    </ul>
+                </li>
+                <li style="margin-top: 1rem;"><strong>Wireless:</strong>
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Wi-Fi (2.4 GHz, 5 GHz, 6 GHz)</li>
+                        <li>Bluetooth, Infrared</li>
+                        <li>Radio waves</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Common Devices</h2>
+            <ul>
+                <li><strong>Hubs</strong> - Broadcasts to all ports (obsolete)</li>
+                <li><strong>Repeaters</strong> - Amplifies signals</li>
+                <li><strong>Network Interface Cards (NICs)</strong> - Connect devices to network</li>
+                <li><strong>Cables & Connectors</strong> - Physical transmission medium</li>
+                <li><strong>Modems</strong> - Converts digital to analog signals</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Signal Types</h2>
+            <div class="example-box">
+                <p><strong>Digital Signal:</strong> Discrete values (0 or 1)</p>
+                <p>→ Used in computers and digital networks</p>
+                <br>
+                <p><strong>Analog Signal:</strong> Continuous wave</p>
+                <p>→ Used in telephone lines, radio</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Real-World Example</h2>
+            <p>When you plug in an Ethernet cable:</p>
+            <div class="example-box">
+                <p>1. Electrical signals travel through copper wires</p>
+                <p>2. Voltage changes represent 0s and 1s</p>
+                <p>3. NIC converts signals to digital data</p>
+                <p>4. Data passed up to Layer 2 for processing</p>
+            </div>
+        </div>
+
+        <div class="content-section" style="text-align: center; background: linear-gradient(135deg, var(--bg-card), #0f3460);">
+            <h2>🎉 You've Completed the OSI Model!</h2>
+            <p>You now understand all 7 layers of how the internet works.</p>
+            <p style="margin-top: 1rem;">
+                <a href="index.html" style="color: var(--layer-3);">Return to Home</a> | 
+                <a href="layers.html" style="color: var(--layer-3);">View All Layers</a>
+            </p>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="layer2.html" class="nav-btn">← Layer 2: Data Link</a>
+            <a href="index.html" class="nav-btn">Back to Home →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Web Technology Project - OSI Model Explained</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

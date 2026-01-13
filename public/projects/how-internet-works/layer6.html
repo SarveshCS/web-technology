@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer 6 - Presentation Layer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌐 Internet Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="layers.html">All Layers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="layer-hero l6">
+            <h1>Layer 6: Presentation Layer</h1>
+            <p class="subtitle">The translator of the network</p>
+        </div>
+
+        <div class="content-section">
+            <h2>What is the Presentation Layer?</h2>
+            <p>The Presentation Layer is responsible for <strong>data translation, encryption, and compression</strong>. It acts as a translator between the application layer and the network.</p>
+            <p>Think of it as the layer that ensures data is in a format that both the sender and receiver can understand.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Key Functions</h2>
+            <ul>
+                <li><strong>Data Translation:</strong> Converts data between different formats (ASCII, EBCDIC, Unicode)</li>
+                <li><strong>Encryption/Decryption:</strong> Secures data for transmission (SSL/TLS)</li>
+                <li><strong>Compression:</strong> Reduces data size for faster transmission</li>
+                <li><strong>Serialization:</strong> Converts objects to byte streams</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Common Protocols & Standards</h2>
+            <ul>
+                <li><strong>SSL/TLS</strong> - Secure Socket Layer / Transport Layer Security</li>
+                <li><strong>JPEG, GIF, PNG</strong> - Image formats</li>
+                <li><strong>MPEG, MP4</strong> - Video formats</li>
+                <li><strong>ASCII, Unicode</strong> - Character encoding</li>
+                <li><strong>XML, JSON</strong> - Data serialization formats</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Real-World Example</h2>
+            <p>When you visit a secure website (HTTPS):</p>
+            <div class="example-box">
+                <p>1. Your browser negotiates an <code>SSL/TLS</code> connection</p>
+                <p>2. Data is encrypted before transmission</p>
+                <p>3. Images are decompressed from <code>JPEG</code> format</p>
+                <p>4. Text is decoded from <code>UTF-8</code> encoding</p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="layer7.html" class="nav-btn">← Layer 7: Application</a>
+            <a href="layer5.html" class="nav-btn">Layer 5: Session →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Web Technology Project - OSI Model Explained</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer 2 - Data Link Layer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌐 Internet Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="layers.html">All Layers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="layer-hero l2">
+            <h1>Layer 2: Data Link Layer</h1>
+            <p class="subtitle">Node-to-node data transfer</p>
+        </div>
+
+        <div class="content-section">
+            <h2>What is the Data Link Layer?</h2>
+            <p>The Data Link Layer is responsible for <strong>node-to-node delivery</strong> of data. It packages bits from the Physical layer into <strong>frames</strong> and handles physical addressing using <strong>MAC addresses</strong>.</p>
+            <p>This layer operates within a local network (LAN) and is where <strong>switches</strong> operate.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Key Functions</h2>
+            <ul>
+                <li><strong>Framing:</strong> Packages data into frames with headers/trailers</li>
+                <li><strong>Physical Addressing:</strong> Uses MAC addresses for local delivery</li>
+                <li><strong>Error Detection:</strong> Uses CRC to detect transmission errors</li>
+                <li><strong>Flow Control:</strong> Manages frame transmission rate</li>
+                <li><strong>Access Control:</strong> Determines which device can transmit</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Two Sub-layers</h2>
+            <ul>
+                <li><strong>LLC (Logical Link Control):</strong>
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Interfaces with the Network layer</li>
+                        <li>Flow control and error management</li>
+                    </ul>
+                </li>
+                <li style="margin-top: 1rem;"><strong>MAC (Media Access Control):</strong>
+                    <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                        <li>Interfaces with the Physical layer</li>
+                        <li>Handles MAC addressing</li>
+                        <li>Controls access to shared medium</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>MAC Address</h2>
+            <p>A MAC address is a <strong>48-bit hardware address</strong> burned into every network interface card (NIC).</p>
+            <div class="example-box">
+                <p>Format: <code>AA:BB:CC:DD:EE:FF</code></p>
+                <p>First 3 bytes = Manufacturer (OUI)</p>
+                <p>Last 3 bytes = Device identifier</p>
+                <p>Example: <code>00:1A:2B:3C:4D:5E</code></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Common Protocols & Devices</h2>
+            <ul>
+                <li><strong>Ethernet</strong> - Most common LAN technology</li>
+                <li><strong>Wi-Fi (802.11)</strong> - Wireless LAN</li>
+                <li><strong>PPP</strong> - Point-to-Point Protocol</li>
+                <li><strong>Switches</strong> - Layer 2 devices</li>
+                <li><strong>Bridges</strong> - Connect network segments</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Real-World Example</h2>
+            <p>When data is sent on your local network:</p>
+            <div class="example-box">
+                <p>1. Packet arrives from Layer 3 with IP address</p>
+                <p>2. Layer 2 wraps it in a <strong>frame</strong></p>
+                <p>3. Source MAC + Destination MAC added</p>
+                <p>4. Switch reads destination MAC</p>
+                <p>5. Frame forwarded to correct port</p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="layer3.html" class="nav-btn">← Layer 3: Network</a>
+            <a href="layer1.html" class="nav-btn">Layer 1: Physical →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Web Technology Project - OSI Model Explained</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

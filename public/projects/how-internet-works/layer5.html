@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer 5 - Session Layer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌐 Internet Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="layers.html">All Layers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="layer-hero l5">
+            <h1>Layer 5: Session Layer</h1>
+            <p class="subtitle">The connection manager</p>
+        </div>
+
+        <div class="content-section">
+            <h2>What is the Session Layer?</h2>
+            <p>The Session Layer is responsible for <strong>establishing, managing, and terminating connections</strong> (sessions) between applications. It ensures that data exchange happens in an organized manner.</p>
+            <p>Think of it as the "meeting coordinator" - it sets up the call, keeps it running, and ends it properly.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Key Functions</h2>
+            <ul>
+                <li><strong>Session Establishment:</strong> Opens communication between two devices</li>
+                <li><strong>Session Maintenance:</strong> Keeps the connection alive and synchronized</li>
+                <li><strong>Session Termination:</strong> Properly closes the connection</li>
+                <li><strong>Checkpointing:</strong> Creates recovery points in data transfer</li>
+                <li><strong>Authentication:</strong> Verifies user identity</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Common Protocols & Technologies</h2>
+            <ul>
+                <li><strong>NetBIOS</strong> - Network Basic Input/Output System</li>
+                <li><strong>RPC</strong> - Remote Procedure Call</li>
+                <li><strong>PPTP</strong> - Point-to-Point Tunneling Protocol</li>
+                <li><strong>PAP</strong> - Password Authentication Protocol</li>
+                <li><strong>SCP</strong> - Session Control Protocol</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Session Modes</h2>
+            <ul>
+                <li><strong>Simplex:</strong> One-way communication only (like a TV broadcast)</li>
+                <li><strong>Half-Duplex:</strong> Two-way, but one at a time (like a walkie-talkie)</li>
+                <li><strong>Full-Duplex:</strong> Two-way simultaneous (like a phone call)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Real-World Example</h2>
+            <p>When you log into a website:</p>
+            <div class="example-box">
+                <p>1. A session is <strong>established</strong> after you enter credentials</p>
+                <p>2. A session ID (cookie) is created to track your activity</p>
+                <p>3. The session is <strong>maintained</strong> while you browse</p>
+                <p>4. When you log out, the session is <strong>terminated</strong></p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="layer6.html" class="nav-btn">← Layer 6: Presentation</a>
+            <a href="layer4.html" class="nav-btn">Layer 4: Transport →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Web Technology Project - OSI Model Explained</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

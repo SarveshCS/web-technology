@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer 7 - Application Layer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌐 Internet Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="layers.html">All Layers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="layer-hero l7">
+            <h1>Layer 7: Application Layer</h1>
+            <p class="subtitle">The layer closest to the end user</p>
+        </div>
+
+        <div class="content-section">
+            <h2>What is the Application Layer?</h2>
+            <p>The Application Layer is the <strong>topmost layer</strong> of the OSI model. It's the layer that directly interacts with software applications and provides network services to end-users.</p>
+            <p>This is where you, as a user, interact with the network - through web browsers, email clients, file transfer programs, and more.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Key Functions</h2>
+            <ul>
+                <li>Provides network services directly to user applications</li>
+                <li>Handles user authentication and privacy</li>
+                <li>Identifies communication partners</li>
+                <li>Determines resource availability</li>
+                <li>Synchronizes communication</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Common Protocols</h2>
+            <ul>
+                <li><strong>HTTP/HTTPS</strong> - Web browsing (port 80/443)</li>
+                <li><strong>FTP</strong> - File Transfer Protocol (port 21)</li>
+                <li><strong>SMTP</strong> - Sending emails (port 25)</li>
+                <li><strong>POP3/IMAP</strong> - Receiving emails (port 110/143)</li>
+                <li><strong>DNS</strong> - Domain Name System (port 53)</li>
+                <li><strong>SSH</strong> - Secure Shell (port 22)</li>
+                <li><strong>Telnet</strong> - Remote access (port 23)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Real-World Example</h2>
+            <p>When you type <code>www.google.com</code> in your browser:</p>
+            <div class="example-box">
+                <p>1. Your browser (application) creates an <code>HTTP GET</code> request</p>
+                <p>2. DNS resolves <code>www.google.com</code> to an IP address</p>
+                <p>3. The request is passed down to Layer 6 for processing</p>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="layers.html" class="nav-btn">← All Layers</a>
+            <a href="layer6.html" class="nav-btn">Layer 6: Presentation →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Web Technology Project - OSI Model Explained</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How The Internet Works - OSI Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌐 Internet Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="layers.html">All Layers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>How The Internet Works</h1>
+            <p>Understanding the OSI Model - The 7 Layers of Networking</p>
+        </section>
+
+        <section class="intro">
+            <h2>What is the OSI Model?</h2>
+            <p>The <strong>Open Systems Interconnection (OSI)</strong> model is a conceptual framework that describes how data travels across a network. It divides network communication into <strong>7 distinct layers</strong>, each with specific functions.</p>
+            <p>When you send a message, it travels down through all 7 layers on your device, across the network, and back up through all 7 layers on the receiving device.</p>
+        </section>
+
+        <section class="layers-overview">
+            <h2>The 7 Layers at a Glance</h2>
+            <div class="layers-grid">
+                <a href="layer7.html" class="layer-card layer-7">
+                    <span class="layer-num">L7</span>
+                    <h3>Application</h3>
+                    <p>HTTP, FTP, Email</p>
+                </a>
+                <a href="layer6.html" class="layer-card layer-6">
+                    <span class="layer-num">L6</span>
+                    <h3>Presentation</h3>
+                    <p>Encryption, Compression</p>
+                </a>
+                <a href="layer5.html" class="layer-card layer-5">
+                    <span class="layer-num">L5</span>
+                    <h3>Session</h3>
+                    <p>Connections, Authentication</p>
+                </a>
+                <a href="layer4.html" class="layer-card layer-4">
+                    <span class="layer-num">L4</span>
+                    <h3>Transport</h3>
+                    <p>TCP, UDP, Ports</p>
+                </a>
+                <a href="layer3.html" class="layer-card layer-3">
+                    <span class="layer-num">L3</span>
+                    <h3>Network</h3>
+                    <p>IP Addresses, Routing</p>
+                </a>
+                <a href="layer2.html" class="layer-card layer-2">
+                    <span class="layer-num">L2</span>
+                    <h3>Data Link</h3>
+                    <p>MAC Addresses, Switches</p>
+                </a>
+                <a href="layer1.html" class="layer-card layer-1">
+                    <span class="layer-num">L1</span>
+                    <h3>Physical</h3>
+                    <p>Cables, Signals, Hardware</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="remember">
+            <h2>Easy Way to Remember</h2>
+            <div class="mnemonic">
+                <p><strong>From Layer 7 to Layer 1:</strong></p>
+                <p class="mnemonic-text">"<strong>A</strong>ll <strong>P</strong>eople <strong>S</strong>eem <strong>T</strong>o <strong>N</strong>eed <strong>D</strong>ata <strong>P</strong>rocessing"</p>
+                <p class="mnemonic-sub">Application → Presentation → Session → Transport → Network → Data Link → Physical</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Web Technology Project - OSI Model Explained</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
